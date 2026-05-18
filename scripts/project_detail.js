@@ -22,7 +22,7 @@ async function loadProjectDetails() {
         projectDetailTitle[0].textContent = project.title;
         projectDetailDescription[0].textContent = project.description;
 
-        // Footer bileşenini dinamik olarak yükle ve doldur
+        //** render footer */
         await fetch('/pages/project_footer.html')
             .then(response => response.text())
             .then(data => {

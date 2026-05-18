@@ -27,6 +27,8 @@ function setActiveFilterButton(activeButton) {
 
     filterButtons.forEach(button => {
 
+        //! çakışma var sanırım
+        //TODO review & fix classes
         button.classList.remove('filter-btn-active');
         button.classList.add('filter-btn');
     });
