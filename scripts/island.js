@@ -85,6 +85,9 @@ function initializeIslandModes(){
     island = document.querySelector('.island');
 }
 function setIslandMode(mode) {
+
+    //! transition anims doesn't work
+    
     currentMode = mode;
 
     for (const key in islandModes) {
