@@ -1,0 +1,135 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+
+    width: 1000px;
+    padding: 20px;
+    gap: 40px;
+    background-color: #f8fafc;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #e0e0e0;
+}
+.ft-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+}
+.ft-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: white;
+}
+.ft-left-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    gap: 5px;
+}
+.ft-left-info h1{
+    font-size: 18px;
+    font-weight: bold;
+}
+.ft-left-info p{
+    font-size: 14px;
+    color: gray;
+}
+
+.ft-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 60px;
+
+    width: 60%;
+    height: 100%;
+}
+
+.ft-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+
+    gap: 5px;
+    height: 100%;
+}
+
+.ft-block h1{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666
+}
+
+.ft-block-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+.ft-block-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    transition: transform 0.4s ease, scale 0.2s ease;
+}
+.ft-block-item-logo {
+    width: 16px;
+    height: 16px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.ft-block-item:hover{
+    color: #191611;
+    scale: 1.1;
+    transform: translateX(5px);
+}
+
+#footer-placeholder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .ft-left{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ft-right{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ft-block-list,
+    .ft-block{
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,83 +1,3 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    height: fit-content;
-}
-
-.island{
-    width: fit-content;
-    height: fit-content;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: black;
-    border-radius: 50px;
-
-    padding: 10px;
-    padding: 5px, 10px;
-
-    position: fixed;
-    top: 20px;
-    z-index: 1000;
-
-}
-
-.idle{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    gap: 5px;
-    position: relative;
-}
-
-.logo{
-    width: 36px;
-    height: 36px;
-    border-radius: 50px;
-}
-
-.icon{
-    width: 36px;
-    height: 36px;
-
-    border-radius: 50px;
-    background-color: white;
-}
-
-.island-btn{
-    width: 75px;
-    height: 36px;
-
-    border: none;
-    border-radius: 50px;
-    background-color: transparent;
-
-    color: white;
-}
-
-.white-pill{
-    width: 75px;
-    height: 36px;
-
-    border-radius: 50px;
-    background-color: white;
-
-    position: absolute;
-    z-index: -1000;
-
-    transition: transform cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s;
-}
-
-
-/* main */
-
 .main{
     width: 80%;
 
@@ -132,13 +52,13 @@
     align-items: center;
 
     padding: 8px;
-    background: linear-gradient(135deg, #3d94ea 0%, #2ca2c3 50%, #18b294 100%);
+    background-color: black;
     border-radius: 65px;
 }
 
 .abt-role{
-    background-color: #eff6fe;
-    color: #6297f5;
+    background-color: #e6e7e8;
+    color: #888888;
 
     font-weight: semi-bold;
 
@@ -150,10 +70,10 @@
     font-size: 48px;
 }
 .abt-surname {
-    background: linear-gradient(135deg, #4facfe 0%, #43e97b 100%);
-    background-clip: text;
-
-    color: transparent; 
+    color: white;
+    
+    /** ai'a söyledi */
+    -webkit-text-stroke: 2px black;
 
     font-weight: bold;
 }
@@ -198,9 +118,6 @@
     border: 1px solid lightgray;
 }
 
-
-
-/* skills */
 .skills{
     display: flex;
     flex-direction: column;
@@ -274,10 +191,12 @@
     box-shadow: 0px 4px 15px rgba(181, 181, 181, 0.2);
 }
 .skill-icon{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     border-radius: 25px;
     background-color: lightgray;
+    padding: 10px;
+    color: white;
 }
 
 .tech-stack{
@@ -326,10 +245,9 @@
     gap: 20px;
 }
 .ts-education-logo{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 19px;
-    background-color: white;
 }
 .ts-education-info{
     display: flex;
@@ -388,10 +306,9 @@
     gap: 10px;
 }
 .ts-box-header-icon{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 15px;
-    background-color: lightblue;
 }
 .ts-box-header h1{
     font-size: 18px;
@@ -410,117 +327,105 @@
     margin-top: 20px;
 }
 .tech{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
     height: 30px;
     border-radius: 20px;
     background-color: #f8fafc;
     text-align: center;
-    padding: 7px;
-    transition: padding 0.4s ease;
-}
-
-.tech:hover{
-    background-color: lightblue;
-    color: white;
-    padding: 7px 15px;
-    transition: padding 0.4s ease;
-}
-
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-
-    width: 97%;
     padding: 20px;
-    gap: 10px;
-    background-color: #f8fafc;
-    border-radius: 50px;
+    transition: scale 0.4s ease;
 }
-.ft-left{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    width: 40%;
+.tech p{
+    text-align: center;
 }
-.ft-logo{
-    width: 100px;
-    height: 100px;
-    border-radius: 15px;
-    background-color: white;
-}
-.ft-left-info{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-
-    gap: 5px;
-}
-.ft-left-info h1{
-    font-size: 18px;
-    font-weight: bold;
-}
-.ft-left-info p{
-    font-size: 14px;
-    color: gray;
+.tech:hover{
+    background-color: black;
+    color: white;
+    width: fit-content;
+    scale: 1.2;
 }
 
-.ft-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-    gap: 60px;
+@media (max-width: 768px) {
+    
+    .abt-name{
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+    .abt-surname{
+        -webkit-text-stroke: 0.6px black;
+    }
+    .abt-desc{
+        width: 300px;
+        font-size: 12px;
+    }
+    .nvg-btns{
+        flex-direction: column;
+    }
+    .nvg-btn-contact{
+        width: 100%;
+    }
+    
+    .skills{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-title{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .skills-boxes{
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+    .skill-box{
+        align-items: center;
+    }
 
-    width: 60%;
-    height: 100%;
-}
+    .tech-stack{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    .ts-left{
+        align-items: center;
+        justify-content: center;
+    }
 
-.ft-block{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+    
+    .ts-left h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    .ts-left p{
+        font-size: 24px;
+        text-align: center;
+    }
 
+    .ts-education{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        background-color: rgb(234, 238, 247);
+    }
+    
+    .ts-education-info h1 {
+        font-size: 20px;
+    }
+    .ts-education-info p{
+        font-size: 16px;
+    }
 
-    gap: 5px;
-    height: 100%;
-}
-
-.ft-block h1{
-    font-size: 18px;
-    font-weight: bold;
-    color: #666
-}
-
-.ft-block-list{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    gap: 20px;
-}
-.ft-block-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: black;
-    transition: transform 0.4s ease;
-}
-.ft-block-item-logo {
-    width: 30px;
-    height: 30px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.ft-block-item:hover{
-    color: blue;
-    transform: translateX(5px);
+    .ts-right{
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -1,0 +1,106 @@
+/* project_detail.css */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 64px;
+    gap: 32px;
+}
+
+.project-detail-img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail-info {
+    max-width: 800px;
+}
+
+.project-detail-title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.project-detail-description {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.project-detail-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.project-detail-btn {
+    padding: 13px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-detail-btn.app-store {
+    background-color: #000;
+    color: #fff;
+}
+
+.project-detail-btn.google-play {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.project-detail-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.project-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.image-container {
+    width: 60%;
+    background-color: #f5f5f7;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-btn {
+    padding: 8px 16px;
+    border: none;
+    background-color: #e5e5ea;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.image-btn:hover {
+    background-color: #d1d1d6;
+}
+
+

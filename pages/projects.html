@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaiwen | Projects</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/projects.css">
+    <link rel="stylesheet" href="/styles/island.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+<body>
+    <section class="projects">
+        <div id="island-placeholder"></div>
+                <div class="projects-main">
+                    <div class="projects-title">Projelerim</div>
+                    <div class="filter-bar">
+                        <div data-filter="all"  class="filter-item filter-btn-active">
+                            <img class="filter-item-icon" src="/images/icons/workspaces.svg" alt="">
+                            <button data-filter="all" class="filter-btn">Hepsi</button>
+                        </div>
+                        <div data-filter="mobil" class="filter-item">
+                            <img src="/images/icons/mobil.svg" alt="">
+                            <button data-filter="mobil" class="filter-btn">Mobil</button>
+                        </div>
+                        <div data-filter="masaüstü" class="filter-item">
+                            <img src="/images/icons/computer.svg" alt="">
+                            <button data-filter="masaüstü" class="filter-btn">Masaüstü</button>
+                        </div>
+                        <div data-filter="web" class="filter-item">
+                            <img src="/images/icons/web.svg" alt="">
+                            <button data-filter="web" class="filter-btn">Web</button>
+                        </div>
+
+                        
+                    </div>
+                    <div class="projects-list">
+                            <div class="project-item" data-category="mobil">
+                                <img class="project-item-img" src="/images/vision-icon.png" alt="Vision Journal">
+                                <div class="project-item-info">
+                                    <h1 class="project-title">Vision Journal</h1>
+                                    <p class="project-description">Kişisel gelişiminizi takip edip günlük tutabileceğiniz akıllı ajanda.</p>
+                                </div>
+                            </div>
+                            <div class="project-item" data-category="masaüstü">
+                                <img class="project-item-img" src="/images/vision_journal_desktop.jpg" alt="Vision Journal Desktop">
+                                <div class="project-item-info">
+                                    <h1 class="project-title">Vision Journal Desktop</h1>
+                                    <p class="project-description">Masaüstü için geliştirilmiş, odaklanma odaklı vizyon ve günlük uygulaması.</p>
+                                </div>
+                            </div>
+                            <div class="project-item" data-category="mobil">
+                                <img class="project-item-img" src="/images/campus-icon.png" alt="Campus Meal">
+                                <div class="project-item-info">
+                                    <h1 class="project-title">Campus Meal</h1>
+                                    <p class="project-description">Üniversite yemekhane menülerini takip edebileceğiniz modern platform.</p>
+                                </div>
+                            </div>
+                            <div class="project-item" data-category="web">
+                                <img class="project-item-img" src="/images/kaivertion.jpg" alt="Kaivertion">
+                                <div class="project-item-info">
+                                    <h1 class="project-title">Kaivertion</h1>
+                                    <p class="project-description">PDF-Word dönüşümü, resim işleme ve QR kod araçları sunan kapsamlı web platformu.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <div id="footer-placeholder"></div>
+
+    <script src="/scripts/db.js"></script>
+    <script src="/scripts/projects.js"></script>
+    <script src="/scripts/footer.js"></script>
+    <script src="/scripts/island.js"></script>
+</body>
+</html>

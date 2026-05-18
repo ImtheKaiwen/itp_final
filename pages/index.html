@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaiwen | Porfolio</title>
     <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/island.css">
     <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
+
 <body>
     <div class="container">
-        <div class="island">
-            <div class="idle">
-                <div class="white-pill"></div>
-                <img class="logo" src="/images/logo.jpeg" alt="logo">
-                <button class="island-btn" id="btn-home">Home</button>
-                <button class="island-btn" id="btn-projects">Projects</button>
-                <!-- <img class="icon search" src="" alt=""> -->
-            </div>
-
-        </div>
+        <div id="island-placeholder"></div>
         <div class="main">
             <section class="home">
                 <div class="about">
                     <div class="abt-logo-border">
                         <div class="abt-logo-div">
-                            <img class="abt-logo" src="/images/logo.jpeg" alt="">
+                            <img class="abt-logo" src="/images/logo.jpg" alt="">
                         </div>
                     </div>
-                    
+
                     <div class="abt-role">
                         Yazılım Mühendisliği Öğrencisi
                     </div>
                     <div class="abt-name">
-                        <h1>Kerem 
+                        <h1>Kerem
                             <span class="abt-surname">
                                 Keskinoğlu
                             </span>
                         </h1>
                     </div>
                     <div class="abt-desc">
-                        Modern teknolojilerle performanslı masaüstü uygulamaları, ölçeklenebilir backend mimarileri ve kullanıcı dostu dijital deneyimler inşa ediyorum.
+                        Modern teknolojilerle performanslı masaüstü uygulamaları, ölçeklenebilir backend mimarileri ve
+                        kullanıcı dostu dijital deneyimler inşa ediyorum.
                     </div>
                     <div class="nvg-btns">
-                        <button class="nvg-btn nvg-btn-projects">Projelerimi Gör</button>
+                        <button onclick='window.location.href = "/pages/projects.html" ';  class="nvg-btn nvg-btn-projects">Projelerimi Gör</button>
                         <button class="nvg-btn nvg-btn-contact">İletişim</button>
                     </div>
                 </div>
@@ -53,22 +50,24 @@
                     </div>
                     <div class="skills-boxes">
                         <div class="skill-box">
-                            <div style="background-color: #eff6fe;" class="skill-icon"></div>
+                            <img src="/images/icons/computer.svg" style="background-color: rgba(241, 241, 241, 0.995);" class="skill-icon"></img>
                             <h1>.NET / Masaüstü</h1>
-                            <p>C# ve .NET ekosistemiyle performanslı Windows uygulamaları, UI/UX odaklı Forms tasarımları.</p>
+                            <p>C# ve .NET ekosistemiyle performanslı Windows uygulamaları, UI/UX odaklı Forms
+                                tasarımları.</p>
                         </div>
                         <div class="skill-box">
-                            <div style="background-color: #ebf9f5;" class="skill-icon"></div>
+                            <img src="/images/icons/web.svg" style="background-color: rgba(241, 241, 241, 0.995);" class="skill-icon"></img>
                             <h1>Full Stack / Web & Mobil</h1>
                             <p>React, Node.js ve React Native ile modern web ve mobil uygulama geliştirme süreçleri.</p>
                         </div>
                         <div class="skill-box">
-                            <div style="background-color: #fef7eb;" class="skill-icon"></div>
+                            <img src="/images/icons/database.svg" style="background-color: rgba(241, 241, 241, 0.995);" class="skill-icon"></img>
                             <h1>Backend Geliştirme</h1>
-                            <p>Python (Flask) ve Java (Spring Boot) ile modüler, ölçeklenebilir ve güvenli API mimarileri.</p>
+                            <p>Python (Flask) ve Java (Spring Boot) ile modüler, ölçeklenebilir ve güvenli API
+                                mimarileri.</p>
                         </div>
-                        <div  class="skill-box">
-                            <div style="background-color: #f5f2fe;" class="skill-icon"></div>
+                        <div class="skill-box">
+                            <img src="/images/icons/neurology.svg" style="background-color: rgba(241, 241, 241, 0.995);" class="skill-icon"></img>
                             <h1>Veri Bilimi & AI</h1>
                             <p>TensorFlow ve NLP kütüphaneleriyle görüntü işleme ve veri analizi odaklı modeller.</p>
                         </div>
@@ -79,17 +78,17 @@
                         <h1>Teknik Yetenekler</h1>
                         <p>Kullandığım dil ve teknolojiler</p>
                         <div class="ts-education">
-                            <div class="ts-education-logo"></div>
+                            <img src="/images/icons/school.svg" class="ts-education-logo"></img>
                             <div class="ts-education-info">
                                 <h1>Karabük Üniversitesi</h1>
-                                <p>Yazılım Mühendisliği | GPA: 3.2</p>
+                                <p>Yazılım Mühendisliği GPA: 3.2</p>
                             </div>
                         </div>
                     </div>
                     <div class="ts-right">
                         <div class="ts-box">
                             <div class="ts-box-header">
-                                <div class="ts-box-header-icon"></div>
+                                <img src="/images/icons/code.svg" class="ts-box-header-icon"></img>
                                 <h1>Diller</h1>
                             </div>
                             <div class="ts-box-body">
@@ -119,11 +118,11 @@
                                 </div>
 
                             </div>
-                            
+
                         </div>
                         <div class="ts-box">
                             <div class="ts-box-header">
-                                <div class="ts-box-header-icon"></div>
+                                <img src="/images/icons/computer.svg" class="ts-box-header-icon"></img>
                                 <h1>Frameworks</h1>
                             </div>
                             <div class="ts-box-body">
@@ -146,11 +145,11 @@
                                     <p>Electron.js</p>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="ts-box">
                             <div class="ts-box-header">
-                                <div class="ts-box-header-icon"></div>
+                                <img src="/images/icons/database.svg" class="ts-box-header-icon"></img>
                                 <h1>Veritabanı</h1>
                             </div>
                             <div class="ts-box-body">
@@ -167,11 +166,11 @@
                                     <p>SQLite</p>
                                 </div>
                             </div>
-                            
+
                         </div>
                         <div class="ts-box">
                             <div class="ts-box-header">
-                                <div class="ts-box-header-icon"></div>
+                                <img src="/images/icons/stars.svg" class="ts-box-header-icon"></img>
                                 <h1>Diğer</h1>
                             </div>
                             <div class="ts-box-body">
@@ -191,59 +190,20 @@
                                     <p>NLP</p>
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
             </section>
-            <div class="footer">
-                <div class="ft-left">
-                    <img class="ft-logo" src="/images/logo.jpeg" alt="Logo">
-                    <div class="ft-left-info">
-                        <h1>Kerem Keskinoğlu</h1>
-                        <p>Yazılım Mühendisliği Öğrencisi</p>
-                    </div>
-                </div>
-                <div class="ft-right">
-                    <div class="ft-block">
-                        <h1>İletişim</h1>
-                        <div class="ft-block-list">
-                            <div class="ft-block-item">
-                                <div class="ft-block-item-logo"></div>
-                                <p>kaiwen.info@gmail.com
-</p>
-                            </div>
-                            <div class="ft-block-item">
-                                <div class="ft-block-item-logo"></div>
-                                <p>+90 542 264 5740
-</p>
-                            </div>
-                            <div class="ft-block-item">
-                                <div class="ft-block-item-logo"></div>
-                                <p>Düzce / Merkez</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ft-block">
-                        <h1>Bağlantılar</h1>
-                        <div class="ft-block-list">
-                            <div class="ft-block-item">
-                                <div class="ft-block-item-logo"></div>
-                                <p>Kişisel Web Sitem</p>
-                            </div>
-                            <div class="ft-block-item">
-                                <div class="ft-block-item-logo"></div>
-                                <p>Projelerim</p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-        
+
+        <div id="footer-placeholder"></div>
+
     </div>
 
     <script src="/scripts/index.js"></script>
+    <script src="/scripts/island.js"></script>
+    <script src="/scripts/footer.js"></script>
 </body>
+
 </html>
